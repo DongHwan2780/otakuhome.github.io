@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>작업중</title>
+	<style>
+  *{
+    margin: 0;
+    padding: 0;
+  }
+
+  .title{
+    color: black;
+    background-color: greenyellow;
+    text-align: center;
+    line-height: 200px;
+    margin: auto;
+    width: 1210px;
+    height: 200px;
+    background-image: url(/image/banner.jpg);
+  }
+
+  .body{
+    width: 1210px;
+    height: 1000px;
+    display: flex;
+		margin: 20px auto;
+		text-align: center;
+  }
+  .body > .leftarea{
+    flex: 2.5;
+		box-sizing: border-box;
+    border: 1px solid red;
+  }
+  .body > .centerarea{
+    flex: 5;
+		box-sizing: border-box;
+    border: 1px solid blue;
+  }
+  .body > .rightarea{
+    flex: 2.5;
+		box-sizing: border-box;
+    border: 1px solid green;
+  }
+
+  .body .highraid{
+    width:300px;
+    height:150px;
+    border: 1px solid black;
+  }
+  .body .lowraid{
+    width:300px;
+    height:150px;
+    border: 1px solid black;
+    margin-top: 10px;
+  }
+
+  .body > .centerarea > .notice{
+    width: 550px;
+    height: 500px;
+    border: 1px solid black;
+    margin: auto;
+  }
+
+  .body > .rightarea > .slidebanner{
+    width:250px;
+    height:150px;
+    border: 1px solid black;    
+    margin: auto;
+  }
+  </style>
+</head>
+<body>
+  <div class="title">
+  </div>
+
+  <div class="body">
+    <div class="leftarea">space1
+      <div class="highraid" onclick="window.open('https://docs.google.com/spreadsheets/d/1fHXBRrRn_g1jvG4yimUZadmavGfFehHf7f5BUm-UktM/edit#gid=0')">1580+공대표</div>
+      <div class="lowraid" onclick="window.open('https://docs.google.com/spreadsheets/d/1XU4nxjavIMz6OHIEhpVJJtcLyWCUGcRy0tHzFD0bpqc/edit#gid=0')">1580-공대표</div>
+
+    </div>
+    <div class="centerarea">space2
+      <div class="notice">길드 규칙 및 공지사항</div>
+
+
+    </div>
+    <div class="rightarea">space3
+      <div class="slidebanner">슬라이드 배너</div>
+
+    </div>
+  </div>
+
+</body>
+</html>
