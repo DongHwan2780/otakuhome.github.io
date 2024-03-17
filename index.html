@@ -35,38 +35,29 @@
 		margin: 20px auto;
 		text-align: center;
   }
-  .body > .leftarea{
+  .body > .leftarea , .rightarea{
     flex: 2.5;
-		/* box-sizing: border-box;
-    border: 1px solid red; */
   }
   .body > .centerarea{
     flex: 5;
-		/* box-sizing: border-box;
-    border: 1px solid blue; */
-  }
-  .body > .rightarea{
-    flex: 2.5;
-		/* box-sizing: border-box;
-    border: 1px solid green; */
   }
 
-  .body .highraid{
+  .body .highraid, .lowraid{
     width:300px;
     height:150px;
     background-image: url(image/highraid.jpg);
     line-height: 150px;
-    cursor: pointer;
     border: 3px solid black;
   }
+
+  .body .highraid:hover , .lowraid:hover{
+    opacity:0.7;
+    cursor: pointer;
+  }
+
   .body .lowraid{
-    width:300px;
-    height:150px;
     margin-top: 10px;
     background-image: url(image/lowraid.jpg);
-    line-height: 150px;
-    cursor: pointer;
-    border: 3px solid black;
   }
 
   .body > .centerarea > .notice{
@@ -149,6 +140,10 @@
       cursor: pointer;
     }
 
+    .slideShow > .slides > li > img:hover{
+      opacity:0.7;
+    }
+
   </style>
 </head>
 <body>
@@ -202,7 +197,7 @@
       </div>
     </div>
     <div class="rightarea">
-      <div class="slideShow">슬라이드 배너
+      <div class="slideShow">
         <ul class="slides">
           <li><img src="image/1.png" onclick="window.open('https://loawa.com/')"></li>
           <li><img src="image/2.png" alt=""></li>
